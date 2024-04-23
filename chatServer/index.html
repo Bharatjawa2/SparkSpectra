@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cool Chat</title>
+<style>
+  body {
+    margin: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #222;
+    color: #eee;
+  }
+
+  #form {
+    background: #333;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 1;
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+
+  #input {
+    border: none;
+    padding: 0.75rem;
+    flex-grow: 1;
+    border-radius: 25px 0 0 25px;
+    margin: 0;
+    outline: none;
+    background-color: #444;
+    color: #eee;
+  }
+
+  #form > button {
+    background: #4CAF50;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 0 25px 25px 0;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #form > button:hover {
+    background-color: #45a049;
+  }
+
+  #messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    max-height: calc(100vh - 200px); /* Adjust as needed */
+  }
+
+  #messages > li {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+  }
+
+  .local-message {
+    background: #4CAF50;
+    text-align: right;
+  }
+
+  .remote-message {
+    background: #2196F3;
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+  <ul id="messages"></ul>
+  <form id="form" action="#">
+    <input id="input" autocomplete="off" placeholder="Type a message..." />
+    <button type="submit">Send</button>
+  </form>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+    var username; // Variable to store user's name
+
+    // Prompt the user for their name
+    function promptName() {
+      username = prompt("Please enter your name:");
+      // Send the user's name to the server
+      socket.emit('send name', username);
+    }
+
+    // Listen for the 'request name' event from the server
+    socket.on('request name', promptName);
+
+    var messages = document.getElementById('messages');
+    var form = document.getElementById('form');
+    var input = document.getElementById('input');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (input.value) {
+        socket.emit('chat message', input.value);
+        input.value = '';
+      }
+    });
+
+    socket.on('chat message', function(data) {
+      var item = document.createElement('li');
+      // Display the sender's name along with the message
+      item.textContent = data.user + ': ' + data.msg;
+      // Apply different styling based on the user's name
+      if (data.user === username) {
+        item.classList.add('local-message');
+      } else {
+        item.classList.add('remote-message');
+      }
+      messages.appendChild(item);
+      messages.scrollTop = messages.scrollHeight;
+    });
+  </script>
+</body>
+</html>
