@@ -1,0 +1,91 @@
+<app-side-nav></app-side-nav>
+<div class="container">
+    <div class="card-container">
+        <!-- wedding -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Marriage</h2>
+            </div>
+            <hr>
+            <div class="details">
+                <div class="month">
+                    <h3>Last Few Wedding</h3>
+                    <ul>
+                        <li *ngFor="let monthWedding of lastMonthWedding">{{ monthWedding }}</li>
+                    </ul>
+                </div>
+                <div class="month">
+                    <h3>Current Package</h3>
+                    <p>{{ currentMonthpackage}}<p>
+                </div>
+                <button class="button" (click)="onWedding()">View</button>
+            </div>
+        </div>
+        <!-- Birthday -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Birthday Party</h2>
+            </div>
+            <hr>
+            <div class="details">
+                <div class="month">
+                    <h3>Last Few Parties</h3>
+                    <ul>
+                        <li *ngFor="let monthParty of lastMonthParty">{{ monthParty }}</li>
+                    </ul>
+                </div>
+                <div class="month">
+                    <h3>Current Package</h3>
+                    <p>{{ currentMonthParty}}<p>
+                </div>
+                <button class="button" (click)="onParty()">View</button>
+            </div>
+        </div>
+        <!-- trans -->
+        <div class="card">
+            <div class="card-header">
+                <span class="icon todo-icon"><mat-icon>assignment</mat-icon></span>
+                <h2>To Do Transaction</h2>
+            </div>
+            <hr>
+            <ul>
+                <li *ngFor="let item of ToDoTransaction">
+                    <span class="transaction-status">
+                        <!-- <mat-icon>hourglass_empty</mat-icon> -->
+                    </span>
+                    <span class="transaction-details">{{ item.description }}</span>
+                </li>
+            </ul>
+            <button class="button" (click)="onTodo()">View</button>
+        </div>
+       <!-- total -->
+       <div class="card">
+        <div class="card-header">
+            <span class="icon total-icon"><mat-icon>timeline</mat-icon></span>
+            <h2>Combo Offers</h2>
+        </div>
+        <hr>
+        <div class="total-details">
+            <div class="total-item">
+                <h3>Current Wedding Package</h3>
+                <p>{{ totalCurrentWeddingPackage | currency }}</p>
+            </div>
+            <div class="total-item">
+                <h3>Current Birthday Package</h3>
+                <p>{{ totalCurrentBirthddayPackage | currency }}</p>
+            </div>
+            <hr>
+            <div class="total-item">
+                <h3>discount</h3>
+                <p>-15%</p>
+            </div>
+            <div class="total-item">
+                <h3>Total Package</h3>
+                <p>{{ totalPackage | currency }}</p>
+            </div>
+        </div>
+        
+        <button class="button" (click)="onTodo()">View</button>
+    </div>
+    </div>
+</div>
