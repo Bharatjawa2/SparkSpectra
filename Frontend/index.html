@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="chat.js" defer></script>
+    <script src="chat.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>SparkSpectra</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h4>SparkSpectra</h4>
+            <div class="right-box">
+                <ul>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="#discount">Discount</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+            </div>
+            <div class="account-box">
+                <a href="cart.html"><i class="bi bi-cart"></i></a>
+                <a href="#" class="chatserver"><i class="bi bi-chat-left-dots"></i></a>
+                <!-- <a href="music.html"><i class="bi bi-mic-fill"></i></a> -->
+                <a href="login.html"><i class="bi bi-person"></i></a>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="count-box">
+                <h1>Manage your <br> Events</h1>
+                <p>Wedding, Parties, Book Tickets</p>
+                <div class="weather">
+                    <!-- <h6>12 °C<span>Moderate Temperature</span></h6> -->
+                </div>
+                <div class="butns-cont">
+                    <i class="bi bi-arrow-left" id="btn_left"></i>
+                    <i class="bi bi-arrow-right" id="btn_right"></i>
+                </div>
+                <!-- <div class="images-box">
+                    <div class="card">
+                        <img
+                            src="job-training-new-manager-boss-standing-teaching-online-work-with-mobile-tablet-young-intern-apprentice-learning-statistics-chart-working-office-1.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="wed.avif">
+                        <h6>+6</h6>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="choose-box">
+                <div class="stay-box">
+                    <button><i class="bi bi-house-door-fill"></i></button>
+                    <button><a href="music.html"><i class="bi bi-file-music"></i></button></a>
+                    <button><i class="bi bi-star-fill"></i></button>
+                    <button><i class="bi bi-tv-fill"></i></button>
+                </div>
+                <div class="select">
+                    <div class="card">
+                        <h5>City</h5>
+                        <input type="text" value="Delhi">
+                        <input type="text" value="India">
+                    </div>
+                    <div class="card">
+                        <h5>People</h5>
+                        <input type="text" value="4 people" id="people">
+                        <button id="people_less">Less</button>
+                        <button id="people_more">More</button>
+                    </div>
+                    <div class="card">
+                        <div class="left-bx">
+                            <h5>FROM</h5>
+                            <div class="date">
+                                <h3 id='Checkin_date'>Sat, 05 Jan</h3>
+                                <input type="date" id="fromDate" value="2024-04-11">
+                                <i class="bi bi-calendar2-week-fill"></i>
+                            </div>
+                            <button id="checkin_less">Less</button>
+                            <button id="checkin_more">More</button>
+                        </div>
+                        <div class="right-bx">
+                            <h5>TO</h5>
+                            <div class="date">
+                                <h3 id="Checkout_date">Sun, 06 Jan</h3>
+                                <input type="date" id="toDate" value="2024-04-12">
+                                <i class="bi bi-calendar2-week-fill"></i>
+                            </div>
+                            <button id="checkout_less">Less</button>
+                            <button id="checkout_more">More</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="map">
+        <div class="address_bx">
+            <div class="location_bx">
+                <h6>Location</h6>
+                <h4>Jawa Farms</h4>
+            </div>
+            <i class="bi bi-fullscreen-exit"></i>
+        </div>
+        <!-- <iframe src="https://my.atlist.com/map/d57fd34c-071f-4ada-9d4f-1026dd911778/?share=true"
+            allow="geolocation 'self' https://my.atlist.com" width="100%" height="400px" loading="lazy" frameborder="0"
+            scrolling="no" allowfullscreen id="atlist-embed"></iframe> -->
+
+            <iframe src="https://my.atlist.com/map/efc2fe3e-3944-411f-bbe7-e9e8f4780a7c/?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="400px" loading="lazy" frameborder="0" scrolling="no" allowfullscreen id="atlist-embed"></iframe>
+
+
+    </div>
+    <div class="home">
+        <div class="title_button">
+            <h2>Our Most Liked Packages</h2>
+            <button onclick="window.location.href='event.html';">See All<i class="bi bi-arrow-right"></i></button>
+        </div>
+        <div class="home_bx">
+            <div class="card">
+                <img src="/images/getpaid.jpeg">
+                <div class="contentt">
+                    <i class="heart bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Delhi</h4>
+                        <p>India</p>
+                        <p>From $20.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/marriage.jpeg">
+                <div class="contentt">
+                    <i class="heart bi bi-balloon-heart "></i>
+                    <div class="cont">
+                        <h4>Jaipur</h4>
+                        <p>India</p>
+                        <p>Marriage</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/ai.jpeg">
+                <div class="contentt">
+                    <i class="heart bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4 id="aia">Bengaluru</h4>
+                        <p id="aiaa">India</p>
+                        <p>From $25.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/images/beach.jpeg">
+                <div class="contentt">
+                    <i class="heart bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Goa</h4>
+                        <p>India</p>
+                        <p>From $30.00</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <section>
+        <!-- <div class="more"> -->
+        <!-- <hr> -->
+        <h2>Events</h2>
+        <!-- <hr> -->
+        <!-- <ul>
+            <li>All</li>
+            <li >For you</li>
+            <li>Online</li>
+            <li>This Weekend</li>
+            <li>Food and drink</li>
+        </ul> -->
+        <!-- </div> -->
+        <div class="pro-container">
+            <div class="pro"  onclick="window.location.href='eventinfo2.html';">
+                <img src="/images/img1.jpeg">
+                <div class="des">
+                    <span><h1>MI9: Escape and Evasion in the Second World War</h1></span>
+                    <h5>Thursday, 3 July • 12:00 AM GMT+5:30</h5>
+                    <h5>Mumbai</h5>
+                    <div class="star">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4>$98.00</h4>
+                </div>
+                <a href="#" onclick="addToCart('d', 'f')"><i class="bi bi-plus-circle add"></i></a>
+            </div>
+            <div class="pro">
+                <img src="/images/img2.jpeg">
+                <div class="des">
+                    <span><h1>Free 3 Day Online Live Coding Workshop</h1></span>
+                    <h5>Wed, Apr 10 • 6:30 AM GMT+5:30</h5>
+                    <h5>IIT Delhi</h5>
+                    <div class="star">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4>$160.00</h4>
+                </div>
+                <a href="#" onclick="addToCart('h', 'ed')"><i class="bi bi-plus-circle add"></i></a>
+            </div>
+            <div class="pro">
+                <img src="/images/img3.jpeg">
+                <div class="des">
+                    <span><h1>2024 Total Solar Eclipse: Through the Eyes of NASA</h1></span>
+                    <h5>Mon, June 8 • 10:30 PM GMT+5:30</h5>
+                    <h5>Online</h5>
+                    <div class="star">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4>Free</h4>
+                </div>
+                <!-- Add unique id to the "Add" button -->
+                <a href="#" id="addToCart"><i class="bi bi-plus-circle add"></i></a>
+            </div>
+            <div class="pro">
+                <img src="/images/img5.jpeg">
+                <div class="des">
+                    <span><h1>Indian Cadet Program: Orientation Day Mumbai</h1></span>
+                    <h5>Saturday, 7 May • 10:00 AM</h5>
+                    <h5>Mumbai</h5>
+                    <div class="star">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4>$1095.00</h4>
+                </div>
+                <a href="#"><i class="bi bi-plus-circle add"></i></a>
+            </div>
+            <div class="pro">
+                <img src="/images/marriage.jpeg">
+                <div class="des">
+                    <span><h1>Relationships: From Ego to Love (Free Workshop)</h1></span>
+                    <h5>Sunday, 30 June • 10:30 PM GMT+5:30</h5>
+                    <h5>Online</h5>
+                    <div class="star">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4>$10.00</h4>
+                </div>
+                <a href="#"><i class="bi bi-plus-circle add"></i></a>
+            </div>
+            <div class="pro">
+                <img src="/images/img6.jpeg">
+                <div class="des">
+                    <span><h1>Upcoming Dubai Real Estate Event in Surat</h1></span>
+                    <h5>Sunday, 24 Oct • 9:00 AM</h5>
+                    <h5>Surat Marriott Hotel</h5>
+                    <div class="star">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4>$60.00</h4>
+                </div>
+                <a href="#"><i class="bi bi-plus-circle add"></i></a>
+            </div>
+            <div class="pro">
+                <img src="/images/img7.jpeg">
+                <div class="des">
+                    <span><h1>MBA Fair in New Delhi</h1></span>
+                    <h5>Sun, Apr 14 • 1:00 PM</h5>
+                    <h5>Delhi</h5>
+                    <div class="star">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4>$98.00</h4>
+                </div>
+                <a href="#"><i class="bi bi-plus-circle add"></i></a>
+            </div><div class="pro">
+                <img src="/images/img8.jpeg">
+                <div class="des">
+                    <span><h1>Yoga Teacher Training in Rishikesh India</h1></span>
+                    <h5>Sunday, 14 Aug • 7:00 PM</h5>
+                    <div class="star">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4>$98.00</h4>
+                </div>
+                <a href="#"><i class="bi bi-plus-circle add"></i></a>
+            </div>
+            
+        </div>
+    </section>
+    <div class="see-more">
+        <button id="see" onclick="window.location.href='event.html';">See more</button>
+    </div>
+    <div id="discount">
+    <div class="sm-banner">
+        <div class="banner-box">
+            <h4>Crazy deals</h4>
+            <h2 style="color: black;">Buy 2 tickets and get a chance to get a trip to LONDON</h2>
+            <span>The London Trip is ON..</span>
+            <button>Learn more</button>
+        </div>
+        <div class="banner-box2">
+            <h4>Crazy deals</h4>
+            <h2 style="color: black;">Buy 3 or more tickets and get a chance to get a trip to USA</h2>
+            <!-- <span>The London Trip is ON..</span> -->
+            <button>Learn more</button>
+        </div>
+    </div>
+    </div>
+    
+    <div class="banner">
+        <h1>Want to Organize your <span>own Event</span> </h1>
+        <!-- <h1>Upto <span>30% off</span> - On All Offline Events</h1> -->
+        <a href="http://localhost:4200/planner/dashboard" id="ban">Click Here!</a>
+        <br>
+        <h1>Want to Manage <span>Your Income</span> </h1>
+        <a href="http://localhost:4200/planner/income-details" id="ban">Click Here!</a>
+    </div>
+    <div class="top-des">
+        <h3>Top Destinations across the WORLD</h3>
+        <div class="q">
+        <div class="tour">
+            <img src="/images/newyork.webp">
+            <p>New York</p>
+            <div class="orange"></div>
+        </div>
+        <div class="tour">
+            <img src="/images/los.webp">
+            <p>Los Angeles</p>
+            <div class="orange"></div>
+        </div>
+        <div class="tour">
+            <img src="/images/washington.webp">
+            <p>Washington</p>
+            <div class="orange"></div>
+        </div>
+        <div class="tour">
+            <img src="/images/chicago.webp">
+            <p>Chicago</p>
+            <div class="orange"></div>
+        </div>
+        <div class="tour">
+            <img src="/images/san.webp">
+            <p>San Francisco</p>
+            <div class="orange"></div>
+        </div>
+        <div class="tour">
+            <img src="/images/boston.webp">
+            <p>Boston</p>
+            <div class="orange"></div>
+        </div>
+        <div class="tour">
+            <img src="/images/las vegas.webp">
+            <p>Las Vegas</p>
+            <div class="orange"></div>
+        </div>
+        </div>
+        <div class="popular-city-container">
+            <h3>Popular cities</h3>
+            <div class="cities">
+                <div class="c1">
+                    <p>Things to do in Indore</p>
+                    <p><i class="bi bi-arrow-up-right"></i></p>
+                </div>
+                <div class="c1">
+                    <p>Things to do in Delhi</p>
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
+                <div class="c1">
+                    <p>Things to do in Kolkata</p>
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
+                <div class="c1">
+                    <p>Things to do in Patna</p>
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
+                <div class="c1">
+                    <p>Things to do in Bombay</p>
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
+                <div class="c1">
+                    <p>Things to do in Bangluru</p>
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
+                <div class="c1">
+                    <p>Things to do in Mysore</p>
+                    <i class="bi bi-arrow-up-right"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div>
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+        <!-- <script src="chat.js" defer></script> -->
+    </button>
+    <div class="chatbot">
+        <div class="chatheader">
+            <h2>Chatbot</h2>
+            <span class="close-btn material-symbols-outlined">close</span>
+        </div>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Hi there  <br> How can I help you today?</p>
+            </li>
+           
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..."></textarea>
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+    </div>
+</div>
+<div id="support">
+    <div class="newsletter">
+        <div class="newstext">
+            <h4>Sign up For Newsletters</h4>
+            <p>Get E-mail updates about our latest events and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <form id="emailform">
+                <input type="email" id="email" name="email" placeholder="Your E-mail address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+    
+    <footer>
+        <div class="col">
+            <h3>SparkSpectra</h3>
+            <h4>Contact</h4>
+            <p>Address: MG Road, Bengaluru, India</p>
+            <p><strong>Phone: </strong>+91 839687346</p>
+            <p><strong>Hours: </strong>10:00 - 18:00, Mon-Fri</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter-x"></i>
+                    <i class="bi bi-instagram"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col1">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Event Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col2">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col2">
+            <h4>Services</h4>
+            <a href="#">Music</a>
+            <a href="#">Events Booking</a>
+            <a href="#">Others</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From Google play tore or App store</p>
+            <div class="row">
+                <img src="/images/app.jpeg" id="app">
+                <img src="/images/play.png" id="play">
+            </div>
+            <p id="gateway">Secured Payment Gateways</p>
+            <img src="/images/pay.png" id="pay">
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var chatserver = document.querySelector('.chatserver');
+            chatserver.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default link behavior
+                window.open('http://localhost:4000/', '_blank', 'width=600,height=400');
+            });
+        });
+    </script>
+
+    <script>
+        var signin = document.getElementById('signin');
+        signin.addEventListener('click', () => {
+            setTimeout(() => {
+                window.location.href = 'login.html';
+            }, 300); 
+        }); 
+    </script>
+    <script>
+        document.getElementById("emailform").addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const formData = new FormData(event.target);
+          const email = formData.get("email");
+        
+          try {
+            const response = await fetch("/api/saveEmail", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ email }),
+            });
+            if (response.ok) {
+              alert("Email saved successfully!");
+            } else {
+              alert("Failed to save email.");
+            }
+          } catch (error) {
+            console.error("Error:", error);
+            alert("An error occurred. Please try again later.");
+          }
+        });
+        </script>
+        <script src="email.js"></script>
+        <script>// Function to add item to the cart
+            function addToCart(itemId, itemName) {
+                // Make a POST request to the server to add the item to the cart
+                fetch('/add-to-cart', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ itemId, itemName })
+                })
+                .then(response => {
+                    if (response.ok) {
+                        // Item added successfully, you can update the UI if needed
+                        alert('Item added to cart successfully!');
+                    } else {
+                        // Failed to add item, handle the error
+                        alert('Failed to add item to cart.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred. Please try again later.');
+                });
+            }
+            </script>
+            <script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get the "Add" button
+        var addToCartButton = document.getElementById("addToCart");
+
+        // Add click event listener to the "Add" button
+        addToCartButton.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default behavior of the anchor tag
+
+            // Extract item details from the parent element
+            var parentDiv = event.target.closest(".pro");
+            var itemName = parentDiv.querySelector("h1").textContent;
+            var itemDate = parentDiv.querySelector("h5:nth-of-type(1)").textContent;
+            var itemLocation = parentDiv.querySelector("h5:nth-of-type(2)").textContent;
+
+            // Create a new cart item element
+            var newItem = document.createElement("div");
+            newItem.classList.add("cart-item");
+            newItem.innerHTML = `
+                <h3>${itemName}</h3>
+                <p>Date: ${itemDate}</p>
+                <p>Location: ${itemLocation}</p>
+                <button class="remove">Remove</button>
+            `;
+
+            // Add the new cart item to the cart
+            var cart = document.getElementById("cartItems");
+            cart.appendChild(newItem);
+        });
+
+        // Handle click event on "Remove" button in the cart
+        document.addEventListener("click", function(event) {
+            if (event.target.classList.contains("remove")) {
+                event.target.parentElement.remove(); // Remove the item from the cart
+            }
+        });
+    });
+
+            </script>
+            <script src="cart.js"></script>
+</body>
+
+</html>

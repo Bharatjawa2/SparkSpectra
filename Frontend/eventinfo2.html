@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Information</title>
+    <link rel="stylesheet" href="eventinfo.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Sparkspectra</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Discount</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+              <li class="nav-item">
+                <form class="form-inline search-form">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </nav>
+    <!-- <div class="image">
+      <img src="images/fest.webp">
+    </div> -->
+
+
+
+
+      <div class="prodetails">
+            <div class="single-pro-image">
+                <img src="/images/w1.jpg" width="100%" id="MainImg">
+                    <div class="small-img-grp">
+                        <div class="small-img-col">
+                            <img src="/images/w1.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="/images/w2.jpeg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="/images/w3.jpeg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="/images/w4.jpg" width="100%" class="small-img">
+                        </div>
+                    </div>
+            </div>
+            <div class="single-pro-details">
+                <h6>Home/Events</h6>
+                <h4>Events you never forget</h4>
+                <h2>$95.00</h2>
+                <select>
+                    <option>Your age</option>
+                    <option>Below 20</option>
+                    <option>20-35</option>
+                    <option>35-50</option>
+                    <option>Above 50</option>
+                </select>
+                <input type="number" value="1">
+                <button class="normal">Add to cart</button>
+                <h4>Event Details</h4>
+                <span>🌟 Unveiling the Heroic Saga of MI9: Escape and Evasion 🌟
+
+                    Step back in time and immerse yourself in the captivating tale of MI9, the secret British military intelligence organization that played a pivotal role in aiding Allied prisoners of war during the Second World War.
+                    <br>🔍 Discover Untold Stories: Journey through the clandestine operations and daring escapades orchestrated by MI9 agents, as they devised ingenious strategies to assist captured soldiers in their quest for freedom. Uncover the remarkable tales of courage, resilience, and ingenuity that defined this clandestine organization.
+                    <br> 🌍 Explore the Shadows of War: Delve into the shadowy world of espionage and subterfuge, where every decision carried life-or-death consequences. From covert communication methods to intricate escape routes, witness the extraordinary lengths to which MI9 went to support Allied POWs behind enemy lines.
+                    <br>🎖️ Honoring Unsung Heroes: Pay homage to the unsung heroes of MI9, whose selfless dedication and unwavering resolve saved countless lives and changed the course of history. Their bravery and resourcefulness serve as a beacon of hope and inspiration for generations to come.
+                    <br> 🔓 Unlocking Secrets of Survival: Gain insight into the survival tactics employed by Allied POWs, from crafting makeshift tools to mastering the art of evasion. Learn how ordinary individuals defied the odds and triumphed over adversity in the face of unimaginable peril.
+                    <br> 🎥 Immersive Exhibits and Engaging Presentations: Experience history come to life through immersive exhibits, interactive displays, and captivating presentations. Engage with experts and historians as they shed light on the clandestine world of MI9 and its enduring legacy.</div>
+      </div>
+
+
+
+      <script>
+        var MainImg=document.getElementById("MainImg");
+        var SmallImg=document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick=function(){
+            MainImg.src=SmallImg[0].src;
+        }
+        SmallImg[1].onclick=function(){
+            MainImg.src=SmallImg[1].src;
+        }
+        SmallImg[2].onclick=function(){
+            MainImg.src=SmallImg[2].src;
+        }
+        SmallImg[3].onclick=function(){
+            MainImg.src=SmallImg[3].src;
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* margin-left: 0; */
+}
+
+.navbar-nav.ml-auto {
+    align-items: center;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.search-form input {
+    width: 200px;
+}
+
+.image img {
+    background-position: bottom;
+    width: 90%;
+    height: 80vh;
+    margin-left: 70px;
+    margin-right: 40px;
+    border-radius: 25px;
+}
+
+/* event */
+.prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+.prodetails .single-pro-image{
+    padding: 30px;
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-grp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+.prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+
+.prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+
+.prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.prodetails .single-pro-details input:focus{
+    outline: none;
+}
+
+.prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
+.small-img-col{
+    margin-top: 20px;
+    margin-right: 4px;
+}
+.small-img-col img{
+    width: 130px;
+    height: 10vh;
+}
+
+.normal{
+    border: none;
+    background-color: #088178;
+    color: #fff;
+    padding: 10px;
+}

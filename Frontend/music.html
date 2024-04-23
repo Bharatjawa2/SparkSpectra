@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="music.css">
+</head>
+
+<body>
+    <div class="back">
+        <img src="/images/redd-f-qMFSP1xYVTQ-unsplash.jpg">
+        <p class="overlay-text">Find your perfect concert</p>
+        <p class="overlay-text1">wherever you are</p>
+        <h2>Discover the best live music, tailored to your music taste.</h2>
+        <button id="but1">Find a concert<i class="bi bi-arrow-right"></i></button>
+    </div>
+    <div class="video-container">
+        <video id="video-player" controls autoplay width="500">
+            <source controls autoplay muted src="/images/video1.mp4" type="video/mp4" class="vid1">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="concert">
+        <div class="un">
+            <h2>Unforgettable<br>intimate sets</h2>
+            <p>Get exclusive access to Live<br> events, and catch up on past performances.</p>
+            <button id="but2">More videos<i class="bi bi-arrow-right"></i></button>
+        </div>
+        <div class="top-des">
+            <!-- <h3>Top Destinations across the WORLD</h3> -->
+            <div class="q">
+                <div class="tour">
+                    <img src="/images/taylor.webp">
+                    <p>Taylor Swift</p>
+                    <!-- <div class="orange"></div> -->
+                </div>
+                <div class="tour">
+                    <img src="/images/gomez.webp">
+                    <p>Selena Gomez</p>
+                    <!-- <div class="orange"></div> -->
+                </div>
+                <div class="tour">
+                    <img src="/images/perry.webp">
+                    <p>Katty Perry</p>
+                    <!-- <div class="orange"></div> -->
+                </div>
+                <div class="tour">
+                    <img src="/images/billie.webp">
+                    <p>Billie Eilish</p>
+                    <!-- <div class="orange"></div> -->
+                </div>
+                <div class="tour">
+                    <img src="/images/Ed.webp">
+                    <p>Ed Sheeran</p>
+                    <!-- <div class="orange"></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trend">
+        <h2>Top Trending Artists</h2>
+        <div class="flex">
+            <div class="card-square">
+                <img src="/images/talwinder.jpeg" alt="Talwinder">
+                <div class="blur"></div>
+                <p>Talwinder</p>
+                <!-- <div class="number">1</div> -->
+            </div>
+
+            <div class="card-square">
+                <img src="/images/karan.webp" alt="Talwinder">
+                <div class="blur"></div>
+                <p>Karan Aujla</p>
+                <!-- <div class="number">1</div> -->
+            </div>
+
+            <div class="card-square">
+                <img src="/images/yoyo.avif" alt="Talwinder">
+                <div class="blur"></div>
+                <p>Yoyo Honey Singh</p>
+                <!-- <div class="number">1</div> -->
+            </div>
+            <div class="card-square">
+                <img src="/images/arjit.jpeg" alt="Talwinder">
+                <div class="blur"></div>
+                <p>Arjit Singh</p>
+                <!-- <div class="number">1</div> -->
+            </div>
+        </div>
+        <div class="booki">
+            <img src="/images/button.png">
+            <p>Get Your Tickets Now</p>
+            <button id="booking">Book Now</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var bookingButtons = document.getElementsByClassName('tour');
+            for (var i = 0; i < bookingButtons.length; i++) {
+                bookingButtons[i].addEventListener('click', function() {
+                    window.location.href = 'bookinghollywood.html';
+                });
+            }
+        });
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            var bookingButton = document.getElementById('booking');
+            bookingButton.addEventListener('click', function() {
+                window.location.href = 'booking.html';
+            });
+        });
+    </script>
+    
+
+
+</body>
+
+</html>

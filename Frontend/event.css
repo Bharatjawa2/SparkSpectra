@@ -1,0 +1,264 @@
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* margin-left: 0; */
+}
+
+.navbar-nav.ml-auto {
+    align-items: center;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.search-form input {
+    width: 200px;
+}
+
+.image img {
+    background-position: bottom;
+    width: 90%;
+    height: 80vh;
+    margin-left: 70px;
+    margin-right: 40px;
+    border-radius: 25px;
+}
+
+.content h2 {
+    margin-top: 30px;
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+
+.content{
+    margin-left: 40px;
+    margin-right: 50px;
+}
+.content2{
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.card img{
+    width: 113%;
+    border-radius:20px ;
+}
+
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* padding-top: 20px; */
+}
+
+.content2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* padding-top: 20px; */
+}
+.ok h2{
+    margin-top: 50px;
+    font-size: 19px;
+    font-weight: 500;
+    margin-left: 80px;
+}
+
+.card{
+    width: 29%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.05);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 50px;
+    margin-top: 20px;
+    height: 45vh;
+    /* border: 1px solid; */
+}
+
+.card:hover{
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.4);
+}
+
+.card .card-details{
+    text-align: start;
+    padding: 10px 0;
+}
+
+.card .card-details span{
+    color: black;
+    font-size: 22px;
+}
+
+.card .card-details h5{
+    /* padding-top: 7px; */
+    color: black;
+    font-size: 14px;
+}
+
+.card .card-details i{
+    font-size: 12px;
+    color: rgb(243,181,25);
+}
+
+.card .card-details h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+
+.card .card-details p{
+    color: orange;
+}
+
+.more p{
+    margin-top: 50px;
+    font-size: 19px;
+    font-weight: 500;
+    margin-left: 80px;
+    display: flex;
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 0 auto; /* Center the footer horizontally */
+    background-color: rgb(47, 47, 48);
+    color: white;
+    height: 40vh;
+    width: 100%;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-right: 20px; /* Adjusted margin for consistency */
+}
+
+footer .col1,
+footer .col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+footer .col1 a,
+footer .col2 a{
+    color: white;
+}
+
+footer .col1,
+footer .col2 {
+    margin-top: 20px; /* Adjusted margin-top for consistency */
+}
+
+footer h4 {
+    margin-top: 0; /* Remove extra margin-top */
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+
+#gateway{
+    margin-left: 900px;
+    margin-top: -150px;
+}
+
+#pay{
+    margin-left: 900px;
+    /* margin-top: -0px; */
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+#app {
+    border-radius: 6px;
+    margin-left: 350px;
+    border: 0;
+    top:100%;
+    margin-top: -100px;
+    width: 200px;
+}
+
+#play{
+    border-radius: 6px;
+    margin-left: 450px;
+    border: 0;
+    top:100%;
+    margin-left: 600px;
+    margin-top: -900px;
+    width: 200px;
+    height: 20vh;
+}
+
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+footer .install i:hover,
+footer a:hover {
+    color: #088178;
+}
+
+footer .col h4{
+    margin-top: 20px;
+}
+
+footer .col1{
+    margin-top: 50px;
+    margin-left: -1200px;
+}
+
+footer .col2{
+    margin-top: 50px;
+}

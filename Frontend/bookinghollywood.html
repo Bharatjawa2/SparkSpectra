@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bookinghollywood.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <div class="india">
+        <h1>Outside India</h1>
+    </div>
+    <div class="movie-container">
+      <label> Select:</label>
+      <select id="movie">
+          <option value="260">Taylor Swift ($ 260.00)</option>
+        <option value="220">Selena Gomez ($ 90.00)</option>
+        <option value="320">Katty Perry ($ 76.00)</option>
+        <option value="250">Billie Eilish ($ 25.00)</option>
+        <option value="250">Ed Sheeran ($ 25.00)</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Available</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat sold"></div>
+        <small>Sold</small>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seat for a price of RS.<span
+        id="total"
+        >0</span
+      >
+    </p>
+    <button id="b">Checkout</button>
+
+    <script src="bookinghollywood.js"></script>
+    <script>
+      var but=document.getElementById("b");
+      but.addEventListener("click",()=>{
+        window.location.href = "pay.html";
+      })
+    </script>
+  </body>
+</html>

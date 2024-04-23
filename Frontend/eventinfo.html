@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Information</title>
+    <link rel="stylesheet" href="eventinfo.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Sparkspectra</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Discount</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+              <li class="nav-item">
+                <form class="form-inline search-form">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </nav>
+    <!-- <div class="image">
+      <img src="images/fest.webp">
+    </div> -->
+
+
+
+
+      <div class="prodetails">
+            <div class="single-pro-image">
+                <img src="/images/yoga.jpeg" width="100%" id="MainImg">
+                    <div class="small-img-grp">
+                        <div class="small-img-col">
+                            <img src="/images/yoga.jpeg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="/images/yoga2.avif" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="/images/yoga3.jpeg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="/images/yoga4.jpeg" width="100%" class="small-img">
+                        </div>
+                    </div>
+            </div>
+            <div class="single-pro-details">
+                <h6>Home/Events</h6>
+                <h4>Events you never forget</h4>
+                <h2>$75.00</h2>
+                <select>
+                    <option>Your age</option>
+                    <option>Below 20</option>
+                    <option>20-35</option>
+                    <option>35-50</option>
+                    <option>Above 50</option>
+                </select>
+                <input type="number" value="1">
+                <button class="normal">Add to cart</button>
+                <h4>Event Details</h4>
+                <span>Embark on a journey of self-discovery and rejuvenation at our upcoming yoga event! Set amidst the tranquil embrace of nature, this gathering promises to be a sanctuary for your mind, body, and spirit.
+                    <br>🧘‍♀️ Connect with Your Inner Self: Delve into the ancient practice of yoga and explore the profound connection between movement, breath, and consciousness. Guided by experienced instructors, you'll embark on a transformative journey within.
+                    <br>🌅 Savor Serenity in Nature's Embrace: Immerse yourself in the serene beauty of our outdoor venue, where lush greenery and fresh air create the perfect backdrop for your practice. Feel the stress melt away as you flow through each posture, surrounded by natural splendor.
+                    <br>🙏 Nurture Mind, Body, and Spirit: Whether you're a seasoned yogi or a beginner, there's something for everyone at our event. From gentle Hatha sessions to invigorating Vinyasa flows, our diverse range of classes caters to all levels and preferences.</span>
+            </div>
+      </div>
+
+
+
+      <script>
+        var MainImg=document.getElementById("MainImg");
+        var SmallImg=document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick=function(){
+            MainImg.src=SmallImg[0].src;
+        }
+        SmallImg[1].onclick=function(){
+            MainImg.src=SmallImg[1].src;
+        }
+        SmallImg[2].onclick=function(){
+            MainImg.src=SmallImg[2].src;
+        }
+        SmallImg[3].onclick=function(){
+            MainImg.src=SmallImg[3].src;
+        }
+      </script>
+</body>
+</html>

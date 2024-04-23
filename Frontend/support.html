@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="suport.css">
+    <script src="https://kit.fontawesome.com/4c7c5c60ea.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>jawabharat05@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8396010179</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Bharatjawa2" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://leetcode.com/Bharat_Jawa/" target="_blank"><i class="fa-solid fa-code"></i></a>
+                        <a href="https://www.linkedin.com/in/bharat-jawa-49537b24a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/bharat_jawa_/?hl=en" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <!-- <a href="Bharat CV.pdf" download class="btn btn2" target="_blank">Download CV</a> -->
+                </div>
+                <div class="contact-right">
+                    <form method="post" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="copyright"> -->
+            <!-- <p>copyright © Bharat. Made with  <i class="fa-solid fa-heart"></i>   by GSR </p> -->
+        <!-- </div> -->
+    </div>
+
+    <script>const scriptURL = 'https://script.google.com/macros/s/AKfycbxMfm7WlkGXvuL53DPHgrvZ6rIGdxVZ_cJXbYplSBWiychPR821fHgqT_57SvXZQ6Y/exec'
+        const form = document.forms['submit-to-google-sheet']
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => console.log('Success!', response))
+              .catch(error => console.error('Error!', error.message))
+          })</script>
+</body>
+</html>
