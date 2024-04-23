@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <div id="cart">
+        <% if (cartItems.length > 0) { %>
+            <ul>
+                <% cartItems.forEach((item, index) => { %>
+                    <li>
+                        <h3><%= item.itemName %></h3>
+                        <p>Date: <%= item.itemDate %></p>
+                        <p>Location: <%= item.itemLocation %></p>
+                        <form action="/removeFromCart" method="post">
+                            <input type="hidden" name="index" value="<%= index %>">
+                            <button type="submit">Remove</button>
+                        </form>
+                    </li>
+                <% }); %>
+            </ul>
+        <% } else { %>
+            <p>No items in the cart.</p>
+        <% } %>
+    </div>
+    <hr>
+    <h2>Add Item</h2>
+    <form action="/addToCart" method="post">
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" name="itemName" required><br>
+        <label for="itemDate">Date:</label>
+        <input type="text" id="itemDate" name="itemDate" required><br>
+        <label for="itemLocation">Location:</label>
+        <input type="text" id="itemLocation" name="itemLocation" required><br>
+        <button type="submit">Add to Cart</button>
+    </form>
+</body>
+</html>
